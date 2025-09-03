@@ -34,7 +34,7 @@ public class Main {
         System.out.println("\nTask #4");
         var friend = 19;
         System.out.println(friend);
-        friend -= 2;
+        friend += 2;
         System.out.println(friend);
         friend /= 7;
         System.out.println(friend);
@@ -70,11 +70,11 @@ public class Main {
         System.out.println("Всего работников в компании - " + numberOfEmployees + " человек");
         //task #8.2
         var newEmployees = 94;
-        var numberOfOldAndNewEmployees = newEmployees + newEmployees;
+        var numberOfOldAndNewEmployees = newEmployees + numberOfEmployees;
         System.out.println("Если в компании работает "+
                            numberOfOldAndNewEmployees +
                            " человек, то всего " +
-                           (numberOfOldAndNewEmployees * employeeTime) +
+                           (allTime / numberOfOldAndNewEmployees) +
                            " часов работы может быть поделено между сотрудниками");
     }
 }
