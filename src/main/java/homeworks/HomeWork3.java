@@ -62,6 +62,7 @@ public class HomeWork3 {
 
         //task #6
         System.out.println("\nЗадание №6");
+        //new comm
 
     }
 }
