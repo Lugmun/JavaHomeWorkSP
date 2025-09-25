@@ -1,5 +1,7 @@
 package homeworks;
 
+import org.example.Main;
+
 public class HomeWork3 {
     public static void main(String[] args) {
 
@@ -62,7 +64,52 @@ public class HomeWork3 {
 
         //task #6
         System.out.println("\nЗадание №6");
-        //new comm
+        //standard weight
+        byte banana = 80;
+        byte milk = 105;
+        byte iceCream = 100;
+        byte egg = 70;
+        //for recipe
+        byte numOfBanana = 2;
+        byte nuOfMilk = 2;
+        byte numOfIceCream = 2;
+        byte numOfEggs = 4;
+        //calculating
+        int finalWeight = (banana * numOfBanana +
+                                     milk * nuOfMilk +
+                                     iceCream * numOfIceCream +
+                                     egg * numOfEggs);
+        System.out.println("Вес такого спортзавтрака равен " + finalWeight + " в граммах, или " + 0.001*finalWeight + " в килограммах");
+
+        //task #7
+        System.out.println("\nЗадание №7");
+        int toLoseWeight = 7000;
+        int toLoseLessPerDay = 250;
+        int toLoseMorePerDay = 500;
+
+        int daysToLoseLess = toLoseWeight / toLoseLessPerDay;
+        int daysToLoseMore = toLoseWeight / toLoseMorePerDay;
+        int averageAmountOfDays = (daysToLoseLess + daysToLoseMore) / 2;
+
+        System.out.println("Если спортсмен будет худеть по 250 гр, то потребуется " + daysToLoseLess + " дней.\n" +
+                           "Иначе, если спортсмен будет худеть по 500 гр, то потребуется " + daysToLoseMore +  " дней.\n" +
+                           "В среднем потребуется " + averageAmountOfDays + " день.");
+
+        //task #8
+        System.out.println("\nЗадание №8");
+        byte numOfMonths = 12;
+        float coefficientOfIncrease = 0.1f;
+        int salaryOfMaria = 67760;
+        int salaryOfDenis = 83690;
+        int salaryOfCristine = 76230;
+
+        int newSalaryOfMaria = (int) (salaryOfMaria + salaryOfMaria * coefficientOfIncrease);
+        int newSalaryOfDenis = (int) (salaryOfDenis + salaryOfDenis * coefficientOfIncrease);
+        int newSalaryOfCristine = (int) (salaryOfCristine + salaryOfCristine * coefficientOfIncrease);
+
+        System.out.println("Маша теперь получает " + newSalaryOfMaria + " рублей. Годовой доход вырос на " + numOfMonths*(newSalaryOfMaria-salaryOfMaria) + " рублей");
+        System.out.println("Денис теперь получает "+ newSalaryOfDenis + " рублей. Годовой доход вырос на " + numOfMonths*(newSalaryOfDenis-salaryOfDenis) +" рублей");
+        System.out.println("Кристина теперь получает " + newSalaryOfCristine + " рублей. Годовой доход вырос на " + numOfMonths*(newSalaryOfCristine-salaryOfCristine) + " рублей");
 
     }
 }
