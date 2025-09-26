@@ -1,9 +1,5 @@
 package homeworks;
 
-import org.w3c.dom.ls.LSOutput;
-
-import java.sql.SQLOutput;
-
 public class HomeWork4 {
     public static void main(String[] args) {
 
